@@ -37,7 +37,7 @@ entries:
     - http://www.chatwoot.com
     type: application
     urls:
-    - https://github.com/ittron/maxcrm-charts/releases/download/chatwoot-1.1.2/chatwoot-1.1.2.tgz
+    - https://github.com/ittron/maxcrm-charts/releases/download/maxcrm-charts-1.1.2/maxcrm-charts-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
     appVersion: v3.0.0
