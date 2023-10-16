@@ -1,4 +1,4 @@
-# Helm Charts for Chatwoot
+# Helm Charts for Chatwoot with maxcrm
 
 ---
 This repository contains helm charts for [Chatwoot](https://chatwoot.com).
