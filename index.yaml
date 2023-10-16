@@ -2167,4 +2167,43 @@ entries:
     urls:
     - https://github.com/chatwoot/charts/releases/download/chatwoot-0.5.0/chatwoot-0.5.0.tgz
     version: 0.5.0
-generated: "2023-09-20T10:29:04.885156594Z"
+  maxcrm-charts:
+  - apiVersion: v2
+    appVersion: v3.1.0
+    created: "2023-10-16T11:55:11.180733316Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.12.2
+    description: "Open-source customer engagement suite, an alternative to Intercom,
+      Zendesk, Salesforce Service Cloud etc. \U0001F525\U0001F4AC"
+    digest: c3d9947485693eb0497699d5d5ffea9e432d65a02f1674ef540e1331f8d55582
+    home: https://github.com/ittron/maxcrm-charts
+    icon: https://chatwoot-public-assets.s3.amazonaws.com/logo/square.png
+    keywords:
+    - chatwoot
+    - open source
+    - customer support
+    - chat
+    - ruby
+    - rails
+    - crm
+    maintainers:
+    - email: vishnu@chatwoot.com
+      name: vishnu-narayanan
+    - email: sojan@chatwoot.com
+      name: sojan-official
+    name: maxcrm-charts
+    sources:
+    - https://github.com/chatwoot/chatwoot
+    - http://www.chatwoot.com
+    type: application
+    urls:
+    - https://github.com/ittron/maxcrm-charts/releases/download/maxcrm-charts-1.1.201/maxcrm-charts-1.1.201.tgz
+    version: 1.1.201
+generated: "2023-10-16T11:55:11.181729127Z"
