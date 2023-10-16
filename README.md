@@ -7,9 +7,5 @@ This repository contains helm charts for [Chatwoot](https://chatwoot.com).
 
 ```bash
 helm repo add maxcrm https://ittron.github.io/maxcrm-charts
-helm install maxcrm chatwoot/chatwoot
+helm install maxcrm maxcrm-charts/chatwoot
 ```
-
-## Questions? Feedback?
-
-[Join our discord server.](https://discord.gg/cJXdrwS)
