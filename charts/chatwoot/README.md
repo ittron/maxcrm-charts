@@ -247,7 +247,7 @@ helm search repo chatwoot
 
 ```
 #if it is major version update, refer to the changelog before proceeding
-helm upgrade chatwoot chatwoot/chatwoot -f <your-custom-values>.yaml
+helm upgrade maxcrm maxcrm-charts/chatwoot -f <your-custom-values>.yaml
 ```
 ### To 1.x.x
 
@@ -255,7 +255,7 @@ Make sure you are on Chatwoot helm charts version `0.9.0` before upgrading to ve
 
 ```
 helm repo update
-helm upgrade chatwoot chatwoot/chatwoot --version="0.9.0"  -f <your-custom-values>  --debug
+helm upgrade maxcrm maxcrm-charts/chatwoot --version="0.9.0"  -f <your-custom-values>  --debug
 ```
 
 This release changes the postgres and redis versions. This is a breaking change and requires manual data migration if you are not using external postgres and redis.
@@ -273,7 +273,7 @@ Before updating,
 1. Set the replica count to 0 for both Chatwoot web(`.Values.web.replicaCount`) and worker(`.Values.worker.replicaCount`) replica sets. Applying this change
 will bring down the pods count to 0. This is to ensure the database will not be having any activity and is in a state to backup.
 ```
-helm upgrade chatwoot chatwoot/chatwoot --version="0.9.0" --namespace ug3 -f values.ci.yaml --create-namespace --debug
+helm upgrade maxcrm maxcrm-charts/chatwoot --version="0.9.0" --namespace ug3 -f values.ci.yaml --create-namespace --debug
 ```
 
 2. Log into the postgres pod and take a backup of your database.
@@ -357,7 +357,7 @@ labels used for deployments. Please delete your helm release and recreate it. De
 not delete your persistent volumes used for Redis, and Postgres and as such your data should be safe.
 
 ```
-helm delete chatwoot
+helm delete maxcrm
 helm repo update
-helm install chatwoot chatwoot/chatwoot
+helm install maxcrm maxcrm-charts/chatwoot
 ```
