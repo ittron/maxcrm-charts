@@ -1,12 +1,12 @@
 # Chatwoot Helm Charts
-[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/artifact-hub)](https://artifacthub.io/packages/helm/ittron/maxcrm-charts)
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/artifact-hub)](https://artifacthub.io/packages/helm/maxcrm-charts/chatwoot)
 
 This repository contains helm charts for [Chatwoot](https://github.com/chatwoot/chatwoot).
 
 ## Installation
 ```bash
 helm repo add maxcrm https://ittron.github.io/maxcrm-charts
-helm install chatwoot chatwoot/chatwoot
+helm install maxcrm maxcrm-charts/chatwoot
 ```
 
 ## Configuration
